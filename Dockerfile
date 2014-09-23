@@ -7,7 +7,9 @@
 FROM bmcustodio/archlinux
 MAINTAINER Bruno M. Custódio <bruno@brunomcustodio.com>
 
-RUN pacman --noconfirm --sync base-devel yajl
+RUN pacman --noconfirm -Syyu
+RUN pacman --noconfirm -S base-devel
+RUN pacman --noconfirm -S yajl
 
 WORKDIR /tmp/aur
 RUN curl https://aur.archlinux.org/packages/pa/package-query/package-query.tar.gz | tar zx
