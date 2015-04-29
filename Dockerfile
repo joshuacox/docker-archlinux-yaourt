@@ -1,11 +1,14 @@
 #
 # Arch Linux + Yaourt
 #
-# https://github.com/bmcustodio/docker-archlinux-yaourt
+# https://github.com/joshuacox/docker-archlinux-yaourt
+# a from https://github.com/bmcustodio/docker-archlinux-yaourt
 #
 
-FROM bmcustodio/archlinux
-MAINTAINER Bruno M. Custódio <bruno@brunomcustodio.com>
+FROM    nfnty/arch-mini:latest
+MAINTAINER Josh Cox <josh 'at' webhosting coop>
+
+ENV CHINOMERGE_updated 20150429
 
 RUN pacman --noconfirm -Syyu
 RUN pacman --noconfirm -S base-devel
