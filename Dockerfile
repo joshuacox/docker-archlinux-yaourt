@@ -8,7 +8,7 @@
 FROM    nfnty/arch-mini:latest
 MAINTAINER Josh Cox <josh 'at' webhosting coop>
 
-ENV ARCHLINUX_YAOURT_UPDATED 20150719
+ENV ARCHLINUX_YAOURT_UPDATED 20150726
 
 RUN pacman --noconfirm -Syyu
 RUN pacman --noconfirm -S base-devel
